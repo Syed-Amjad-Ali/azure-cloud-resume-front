@@ -1,0 +1,530 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #F5F5F5; /* Light Grey Background */
+    color: #333333; /* Dark Grey Text */
+}
+
+/* Header and Footer */
+.header, .footer {
+    text-align: center;
+    background-color: #2D4059; /* Dark Blue */
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #FFD460; /* Warm Yellow */
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                background-color: #EA5455; /* Soft Coral */
+                transform: scale(1.1);
+            }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D4059; /* Dark Blue */
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .hero .text-content {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+        .hero .text-content h2 {
+            font-size: 1.8rem;
+            color: #FFD460; /* Warm Yellow */
+            margin-bottom: 15px;
+        }
+
+        .hero .text-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero .text-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+    .hero .button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+        background-color: #FFD460;
+        color: #2D4059;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .hero .button:hover {
+            background-color: #EA5455; /* Soft Coral */
+        }
+#visitor-counter {
+    margin-top: 15px; /* Adjust spacing */
+    font-size: 1rem; /* Make it visually aligned with the text */
+    color: #FFD460; /* Warm Yellow to match the theme */
+    text-align: left;
+}
+.image-content img {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Details */
+.profile-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .profile-details p {
+        font-size: 1.2rem;
+        color: #FFD460;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-details .location-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+/* General Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Margin above and below the icons */
+}
+
+    /* Reset All Overlays for SVG Icons */
+    .social-icons .icon {
+        width: 40px; /* Icon size */
+        height: 40px;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Add hover effect transitions */
+        filter: none; /* Remove filters */
+        background: none; /* Remove any default background */
+        border: none; /* Remove any border styling */
+        box-shadow: none; /* Remove any shadows */
+        fill: inherit; /* Ensure the SVG colors from the file are used */
+    }
+
+        /* Hover Effect for Icons */
+        .social-icons .icon:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            filter: brightness(1.2); /* Brighten the icon slightly */
+        }
+
+/* Location Icon Styling */
+.profile-details .location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Add space between icon and text */
+    filter: none; /* Ensure the original color is retained */
+    background: none; /* No background overlay */
+    fill: inherit; /* Use original SVG color */
+}
+
+
+
+
+
+/* Contact Info Section */
+.contact-info {
+    padding: 40px 20px; /* Spacing inside the section */
+    background-color: #F5F5F5; /* Light Grey background for separation */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align all content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+    margin: 40px auto; /* Add spacing above and below the section */
+    max-width: 800px; /* Center the section within the page */
+}
+
+    /* Contact Header */
+    .contact-info h2 {
+        font-size: 2rem; /* Larger font size for emphasis */
+        color: #2D4059; /* Dark Blue text */
+        text-transform: uppercase; /* Optional: All caps for bold styling */
+        letter-spacing: 2px; /* Spaced-out letters for readability */
+        margin-bottom: 20px; /* Space below the header */
+        border-bottom: 2px solid #EA5455; /* Underline with a coral accent */
+        display: inline-block; /* Dynamic width for underline */
+        padding-bottom: 5px; /* Space between text and underline */
+    }
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Margin above and below the icons */
+}
+
+    .social-icons .icon {
+        width: 50px; /* Icon size */
+        height: 50px;
+        transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease; /* Add hover effect transitions */
+    }
+
+    .social-icons a[aria-label="LinkedIn"] .icon:hover {
+        fill: #EA5455; /* Soft Coral on hover for LinkedIn */
+        transform: scale(1.1); /* Slight zoom effect */
+        filter: brightness(1.2); /* Brighten the icon */
+    }
+
+    .social-icons a[aria-label="GitHub"] .icon:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+        filter: brightness(1.2); /* Brighten the icon */
+    }
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+    max-width: 600px; /* Restrict form width */
+    margin: 20px auto; /* Center the form */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+    .contact-form label {
+        font-weight: bold; /* Make labels stand out */
+        color: #2D4059; /* Dark Blue */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* Full width input fields */
+        padding: 10px; /* Inner spacing */
+        border: 1px solid #CCC; /* Subtle border */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 1rem; /* Standard font size */
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #EA5455; /* Coral focus color */
+            outline: none; /* Remove default focus outline */
+        }
+
+    .contact-form button {
+        padding: 10px 15px; /* Padding for a comfortable button size */
+        font-size: 1rem; /* Standard font size */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #FFD460; /* Warm Yellow background */
+        color: #2D4059; /* Dark Blue text */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    }
+
+        .contact-form button:hover {
+            background-color: #EA5455; /* Soft Coral on hover */
+            transform: scale(1.05); /* Slightly enlarge the button */
+        }
+
+
+
+
+/* Portfolio Section Styling */
+.portfolio-intro {
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add spacing below the text */
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #2D4059; /* Dark blue text color */
+}
+
+/* Filter Buttons Styling */
+.portfolio-filter {
+    display: flex;
+    justify-content: center; /* Center-align buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px; /* Space below the buttons */
+    padding: 10px; /* Add some internal padding for spacing */
+    text-align: center; /* Ensure text-align works for fallback browsers */
+}
+
+.filter-button {
+    background-color: #FFD460; /* Warm yellow color */
+    color: #2D4059; /* Dark blue text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .filter-button:hover {
+        background-color: #EA5455; /* Soft coral color */
+        transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    .filter-button.active {
+        background-color: #EA5455; /* Soft coral color */
+        color: white; /* Change text color for better contrast */
+        transform: scale(1.05); /* Highlight the active button */
+    }
+
+/* Portfolio Grid Styling */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Space above the grid */
+}
+
+.portfolio-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .portfolio-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-card img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 5px solid #EA5455;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 1.5rem;
+        color: #2D4059;
+        margin-bottom: 15px;
+    }
+
+    .portfolio-card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-card .button {
+        background-color: #FFD460;
+        color: #2D4059;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .portfolio-card .button:hover {
+            background-color: #EA5455;
+        }
+/* Technologies Section */
+.technologies {
+    display: flex; /* Align icons in a row */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Space between icons */
+    
+    margin-top: 40px; /* Add spacing above the icons */
+    align-items: center; /* Vertically align icons if needed */
+    text-decoration: none; /* Remove any underline from the icons */
+}
+
+/* Technology Icons */
+.tech-icon {
+    max-width: 40px; /* Increase the size */
+    max-height: 40px; /* Increase the size */
+    width: auto; /* Maintain original aspect ratio */
+    height: auto; /* Maintain original aspect ratio */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add hover effects */
+    margin: 0 5px; /* Optional: Add spacing around the icon for better alignment */
+    opacity: 0.9; /* Slight transparency for a modern look */
+    display: inline-block; /* Prevent inline text-related styles */
+    text-decoration: none !important; /* Force removal of underline */
+    border: none; /* Remove any border styling */
+}
+
+/* Remove underline from all anchor tags containing SVGs or images */
+a img, .technologies img {
+    text-decoration: none !important; /* Remove underline from linked images */
+    border: none; /* Remove any border styling */
+}
+
+
+
+/* Hover Effects */
+.tech-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    opacity: 1; /* Fully opaque on hover */
+}
+
+/* Hide the Read More section by default */
+.readmore-content {
+    display: none; /* This ensures the section is collapsed when page loads */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+    /* Fix for Read More Section */
+    .readmore-content ul {
+        list-style: none; /* Remove default bullets */
+        padding-left: 0; /* Remove left spacing */
+        margin-left: 0; /* Align properly */
+    }
+
+        .readmore-content ul li {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+            padding: 5px 0;
+        }
+
+    /* Optional: Remove blue border */
+    .readmore-content ul {
+        border-left: none !important;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Contact Info Adjustments */
+    .contact-info {
+        padding: 30px 10px;
+        max-width: 90%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .text-content {
+        margin-bottom: 20px;
+    }
+
+    .hero .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .text-content p {
+        font-size: 1rem;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+
+
+ /* Responsive Grid: Adjusts columns on different screen sizes */
+ @media (max-width: 900px) {
+     .portfolio-grid {
+         grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 columns for tablets */
+     }
+ }
+
+ @media (max-width: 600px) {
+     .portfolio-grid {
+         grid-template-columns: repeat(1, minmax(300px, 1fr)); /* 1 column for mobile */
+     }
+
+     .portfolio-card {
+         padding: 10px; /* Reduce padding for small screens */
+     }
+
+         .portfolio-card h3 {
+             font-size: 1.2rem; /* Reduce title size */
+         }
+
+         .portfolio-card p {
+             font-size: 0.85rem; /* Adjust text size */
+         }
+ }
+
+
+
+
+
+    /* Portfolio Grid Adjustments 
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+        padding: 15px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-card p {
+        font-size: 0.9rem;
+    }
+}*/

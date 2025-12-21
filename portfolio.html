@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Syed Amjad Ali</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO and Social Media Meta Tags -->
+    <meta name="description" content="Portfolio of Syed Amjad Ali, a data analyst proficient in Python, R, SQL, and Azure. Discover projects, a professional CV, and contact details.">
+    <meta name="keywords" content="Syed Amjad Ali, data analyst, portfolio, Python, R, SQL, Azure, data analytics, CV">
+    <meta name="author" content="Syed Amjad Ali">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (for Social Sharing) -->
+    <meta property="og:title" content="Portfolio - Syed Amjad Ali">
+    <meta property="og:description" content="Explore the data analytics projects and professional experience of Syed Amjad Ali.">
+    <meta property="og:url" content="https://syedamjadali.no/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.syedamjadali.no/AmjadPicture.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+	<meta name="twitter:image" content="https://www.syedamjadali.no/AmjadPicture.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Syed Amjad Ali">
+    <meta name="twitter:description" content="Explore the data analytics projects and professional experience of Syed Amjad Ali.">
+    
+     <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Syed Amjad Ali",
+      "jobTitle": "Data Analyst",
+      "url": "https://syedamjadali.no",
+      "sameAs": [
+        "https://www.linkedin.com/in/syed-amjad-ali-a43666a6/",
+        "https://github.com/Syed-Amjad-Ali",
+        "https://x.com/SyedAmjadMaths"
+      ]
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Syed Amjad Ali</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Syed Amjad Ali CV.pdf" target="_blank">CV</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="content">
+        <div class="section">
+            <!-- Portfolio Introductory Text -->
+            <div class="portfolio-intro">
+                <p>Here’s a collection of my favorite projects. Take a look!</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filter">
+                 <button class="filter-button" data-filter="all">All</button>
+    			 <button class="filter-button" data-filter="featured">Featured</button>
+    			 <button class="filter-button" data-filter="r-programming">R Programming</button>
+  			     <button class="filter-button" data-filter="python">Python</button>
+    			 <button class="filter-button" data-filter="powerbi">Power BI</button>
+  			     <button class="filter-button" data-filter="sql">SQL</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                       <!-- Project 1 -->
+                <div class="portfolio-card" data-category="featured causal-analysis r-programming">
+    <a href="assets/Eco_433_github.html" target="_blank">
+        <img src="assets/images/projects/project1.jpg" alt="Impact of Electricity Prices on Private Car Usage in Norway" class="portfolio-image">
+    </a>
+    <h3>Impact of Electricity Prices on Private Car Usage in Norway</h3>
+    <p>A causal analysis investigating how fluctuations in electricity prices affect private car usage in Norway’s major cities. Using event study methodology and econometric models, the project highlights regional differences and transportation trends.</p>
+    
+    <a href="https://github.com/Syed-Amjad-Ali/Norway-Electricity-PrivateCar-Impact-Analysis" target="_blank" class="button">View on GitHub</a>
+<div class="technologies">
+        <img src="assets/images/icons/R.svg" alt="R" class="tech-icon">
+        <img src="assets/images/icons/ggplot2.svg" alt="ggplot2" class="tech-icon">
+    </div>
+</div>
+
+                <!-- Project 2 -->
+<div class="portfolio-card" data-category="featured predictive r-programming">
+    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank">
+        <img src="assets/images/projects/Project2Map.png" alt="Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping" class="portfolio-image">
+    </a>
+    <h3>Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping</h3>
+    <p>Part 1 of a two-part project exploring Bergen's bike rental trends. It involves data cleaning, linear regression modeling, and dynamic geospatial mapping using Leaflet.</p>
+    
+    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank" class="button">View on GitHub</a>
+<div class="technologies">
+        <img src="assets/images/icons/R.svg" alt="R" class="tech-icon">
+        <img src="assets/images/icons/tidyverse.svg" alt="tidyverse" class="tech-icon">
+    </div>
+</div>
+
+<!-- Project 2.5 -->
+<div class="portfolio-card" data-category="featured data-analysis powerbi">
+    <!-- Embedded Power BI Report -->
+    <iframe title="Earthquake Live Dashboard" 
+        width="100%" 
+        height="400" 
+        src="https://app.fabric.microsoft.com/view?r=eyJrIjoiMzgyOWFkMjctNGVjZC00YzM5LTk2ZmMtYWYyNzAxMDE2ZjE1IiwidCI6IjRkYzM3Njg1LWUyMmEtNDQ4My1hNDE1LThiZGNjMTBkMWUzNyJ9" 
+        frameborder="0" 
+        allowfullscreen="true">
+    </iframe>
+
+    <!-- Title -->
+    <h3>Seismic Activity Tracker: Updated Daily</h3>
+
+    <!-- Technologies Section -->
+    <div class="technologies">
+        <img src="assets/images/icons/PowerBI.svg" alt="Power BI" class="tech-icon">
+        <img src="assets/images/icons/Fabric.svg" alt="Microsoft Fabric" class="tech-icon">
+        <img src="assets/images/icons/Python.svg" alt="Python" class="tech-icon">
+    </div>
+
+    <!-- Read More Button -->
+    <button class="read-more-btn" onclick="toggleReadMore('readmore-earthquake')">📖 Read More</button>
+
+    <!-- Hidden Read More Section -->
+    <div id="readmore-earthquake" class="readmore-content">
+        <h4>📊 About the Dataset & Dashboard</h4>
+        <p>
+            This end-to-end Microsoft Fabric project uses real-time data from the USGS Earthquake API. 
+            Earthquakes from the past 5 days are ingested and processed with notebooks and pipelines in Fabric. 
+            The final Power BI report displays seismic activity across the globe using dynamic visuals, significance-based classification, and interactivity. 
+
+        </p>
+    </div>
+</div>
+
+
+<!-- Project 3 -->
+<div class="portfolio-card" data-category="featured data-analysis powerbi">
+    <!-- Embedded Power BI Report -->
+    <iframe title="Adventure Personal" 
+        width="100%" 
+        height="400" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiOTQ0YjZlMTktODAxNC00M2RkLTlkZTUtMDlmOTI1ZGY5OGI1IiwidCI6IjRkYzM3Njg1LWUyMmEtNDQ4My1hNDE1LThiZGNjMTBkMWUzNyJ9" 
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
+    <!-- Description -->
+    <h3>AdventureWorks Sales Report</h3>
+    
+
+    <!-- Technologies Section -->
+    <div class="technologies">
+        <img src="assets/images/icons/PowerBI.svg" alt="Power BI" class="tech-icon">
+    </div>
+<!-- Read More Button -->
+    <button class="read-more-btn" onclick="toggleReadMore('readmore-adventureworks')">📖 Read More</button>
+
+   <!-- Hidden Read More Section (Now Collapsed by Default) -->
+    <div id="readmore-adventureworks" class="readmore-content">
+        <h4>📊 About the Dataset & Dashboard</h4>
+    <p>
+        Built using the AdventureWorks dataset, this Power BI dashboard analyzes key sales performance metrics for a fictional manufacturing company. 
+        It explores revenue trends, profit margins, total orders, and return rates, providing business insights through interactive filtering and drill-through analysis. 
+        The project involves data transformation, modeling, and advanced visualization techniques, including KPI cards, pagination, and tooltips. 
+        Designed as a real-world BI scenario, this dashboard demonstrates the power of data-driven decision-making.
+    </p>
+</div>
+</div>
+
+<!-- Project 4 -->
+<div class="portfolio-card" data-category="data-analysis powerbi">
+    <!-- Embedded Power BI Report -->
+    <iframe title="Lego Sets" 
+        width="100%" 
+        height="400" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiYjZkYzhmYjUtMTZlNi00ZWY4LTlmMmEtMTk0ZTAzY2ZlNmI1IiwidCI6IjRkYzM3Njg1LWUyMmEtNDQ4My1hNDE1LThiZGNjMTBkMWUzNyJ9" 
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
+
+    <!-- Description -->
+    <h3>Lego Sets Dashboard</h3>
+   
+
+    <!-- Technologies Section -->
+    <div class="technologies">
+        <img src="assets/images/icons/PowerBI.svg" alt="Power BI" class="tech-icon">
+    </div>
+
+    <!-- Read More Button -->
+    <button class="read-more-btn" onclick="toggleReadMore('readmore-legosets')">📖 Read More</button>
+
+    <!-- Hidden Read More Section (Collapsed by Default) -->
+    <div id="readmore-legosets" class="readmore-content">
+        <h4>📊 About the Dataset & Dashboard</h4>
+        <p>
+             This Power BI dashboard analyzes LEGO sets released from 1970 to 2022, using data sourced from Brickset. 
+        It explores trends in LEGO pricing, set sizes, and theme popularity across decades, providing key insights 
+        through interactive visualizations and dynamic filters. The dashboard includes KPI cards for total sets, 
+        average price, and average piece count, along with slicers for theme groups, age ranges, and individual themes. 
+        Advanced features include tooltips displaying set images, decomposition trees for detailed category analysis, 
+        and bookmark actions for resetting filters. This project showcases the power of interactive reporting 
+        in business intelligence.
+        </p>
+    </div>
+</div>
+
+<!-- Project 5 AirBnB Listing Analysis -->
+<div class="portfolio-card" data-category="featured data-analysis python">
+    <!-- Clickable Image (Will be updated with an HTML file later) -->
+    <a href="assets/AirBnB_Listing_Analysis.html" target="_blank">
+        <img src="assets/images/projects/airbnb_project.jpg" alt="AirBnB Listing Analysis in Paris" class="portfolio-image">
+    </a>
+
+    <!-- Project Title -->
+    <h3>AirBnB Listing Analysis in Paris</h3>
+
+    <!-- Short Project Description -->
+    <p>
+        This project explores the impact of recent regulations on AirBnB host activity and pricing in Paris. 
+        Using Python and data analysis techniques, the study investigates pricing trends, neighborhood differences, and host growth over time.
+    </p>
+
+    <!-- View on GitHub -->
+    <a href="https://github.com/Syed-Amjad-Ali/AirBnB-Listing-Analysis" target="_blank" class="button">View on GitHub</a>
+
+    <!-- Technologies Used -->
+    <div class="technologies">
+        <img src="assets/images/icons/Python.svg" alt="Python" class="tech-icon">
+        <img src="assets/images/icons/Jupyter.svg" alt="Jupyter Notebook" class="tech-icon">
+        <img src="assets/images/icons/pandas.svg" alt="Pandas" class="tech-icon">
+        <img src="assets/images/icons/matplotlib.svg" alt="Matplotlib" class="tech-icon">
+    </div>
+</div>
+
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Syed Amjad Ali. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
