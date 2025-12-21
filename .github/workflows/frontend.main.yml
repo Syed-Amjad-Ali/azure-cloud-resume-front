@@ -28,7 +28,7 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch \
-              --account-name <amjadportfoliostorage> \
+              --account-name amjadportfoliostorage \
               --destination '$web' \
               --source . \
               --overwrite
@@ -38,9 +38,9 @@ jobs:
         with:
           inlineScript: |
             az cdn endpoint purge \
-              --resource-group <amjad_portfolio> \
-              --profile-name <cdnclassic-portfolio> \
-              --name <cdnsyedportfolio> \
+              --resource-group amjad_portfolio \
+              --profile-name cdnclassic-portfolio \
+              --name cdnsyedportfolio \
               --content-paths "/*"
 
       - name: Azure logout
