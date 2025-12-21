@@ -31,7 +31,8 @@ jobs:
               --account-name amjadportfoliostorage \
               --destination '$web' \
               --source . \
-              --overwrite
+              --overwrite \
+              --auth-mode login
 
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
