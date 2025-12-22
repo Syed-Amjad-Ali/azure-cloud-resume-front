@@ -173,6 +173,14 @@ nav ul {
     fill: inherit; /* Use original SVG color */
 }
 
+.project-link {
+    font-size: 0.95rem;
+    color: white;
+}
+
+.nav-link.inline {
+    padding: 2px 8px;
+}
 
 
 
