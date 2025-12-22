@@ -2,11 +2,11 @@
 
 This project started as a hands-on way to deeply understand Azure’s core building blocks by **deploying and operating a real, production-style system**, rather than stopping at theory or isolated demos.
 
-While researching practical Azure projects, I came across the **Cloud Resume Challenge (Azure edition)** — a well-known community challenge that outlines what a cloud-native resume website should look like in production: static hosting, serverless backends, databases, infrastructure as code, and CI/CD.
+While researching practical Azure projects, I came across the **[Cloud Resume Challenge (Azure edition)](https://cloudresumechallenge.dev/docs/the-challenge/azure/)** — a well-known community challenge that outlines what a cloud-native resume website should look like in production: static hosting, serverless backends, databases, infrastructure as code, and CI/CD.
 
 Instead of treating it as a checklist to rush through, I used the challenge as a **design reference** and spent significant time researching *why* each component exists, how they interact, and where Azure’s managed services fit into a real deployment workflow.
 
-I was also inspired by cloud practitioners who focus on learning-by-building, including content by **Gwyneth Peña-Siguenza (GPSlearnsAI)**, whose Azure-focused projects reinforced the importance of understanding platform fundamentals through real systems rather than toy examples.
+I was also inspired by cloud practitioners who focus on learning-by-building, including content by **[Gwyneth Peña-Siguenza (GPSlearnsAI)](https://www.linkedin.com/in/madebygps/)**, whose Azure-focused projects reinforced the importance of understanding platform fundamentals through real systems rather than toy examples.
 
 ---
 
