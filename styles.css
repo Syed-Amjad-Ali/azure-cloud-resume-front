@@ -138,30 +138,30 @@ nav ul {
     }
 
 /* General Social Icons Styling */
-.social-icons {
+/*.social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between icons */
-    margin: 20px 0; /* Margin above and below the icons */
-}
+    gap: 20px;*/ /* Space between icons */
+    /*margin: 20px 0;*/ /* Margin above and below the icons */
+/*}*/
 
     /* Reset All Overlays for SVG Icons */
-    .social-icons .icon {
-        width: 40px; /* Icon size */
-        height: 40px;
-        transition: transform 0.3s ease, filter 0.3s ease; /* Add hover effect transitions */
-        filter: none; /* Remove filters */
-        background: none; /* Remove any default background */
-        border: none; /* Remove any border styling */
-        box-shadow: none; /* Remove any shadows */
-        fill: inherit; /* Ensure the SVG colors from the file are used */
-    }
+    /*.social-icons .icon {
+        width: 40px;*/ /* Icon size */
+        /*height: 40px;
+        transition: transform 0.3s ease, filter 0.3s ease;*/ /* Add hover effect transitions */
+        /*filter: none;*/ /* Remove filters */
+        /*background: none;*/ /* Remove any default background */
+        /*border: none;*/ /* Remove any border styling */
+        /*box-shadow: none;*/ /* Remove any shadows */
+        /*fill: inherit;*/ /* Ensure the SVG colors from the file are used */
+    /*}*/
 
         /* Hover Effect for Icons */
-        .social-icons .icon:hover {
-            transform: scale(1.1); /* Slight zoom on hover */
-            filter: brightness(1.2); /* Brighten the icon slightly */
-        }
+        /*.social-icons .icon:hover {
+            transform: scale(1.1);*/ /* Slight zoom on hover */
+            /*filter: brightness(1.2);*/ /* Brighten the icon slightly */
+        /*}*/
 
 /* Location Icon Styling */
 .profile-details .location-icon {
@@ -227,29 +227,84 @@ nav ul {
     }
 
 /* Social Icons Styling */
-.social-icons {
+/*.social-icons {
     display: flex;
-    justify-content: center; /* Center-align icons */
-    gap: 20px; /* Space between icons */
-    margin: 20px 0; /* Margin above and below the icons */
-}
+    justify-content: center;*/ /* Center-align icons */
+    /*gap: 20px;*/ /* Space between icons */
+    /*margin: 20px 0;*/ /* Margin above and below the icons */
+/*}
 
     .social-icons .icon {
-        width: 50px; /* Icon size */
-        height: 50px;
-        transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease; /* Add hover effect transitions */
-    }
+        width: 50px;*/ /* Icon size */
+        /*height: 50px;
+        transition: transform 0.3s ease, filter 0.3s ease, fill 0.3s ease;*/ /* Add hover effect transitions */
+    /*}
 
     .social-icons a[aria-label="LinkedIn"] .icon:hover {
-        fill: #EA5455; /* Soft Coral on hover for LinkedIn */
-        transform: scale(1.1); /* Slight zoom effect */
-        filter: brightness(1.2); /* Brighten the icon */
-    }
+        fill: #EA5455;*/ /* Soft Coral on hover for LinkedIn */
+        /*transform: scale(1.1);*/ /* Slight zoom effect */
+        /*filter: brightness(1.2) drop-shadow(0 0 6px rgba(255, 212, 96, 0.6));*/ /* Brighten the icon */
+    /*}
 
     .social-icons a[aria-label="GitHub"] .icon:hover {
-        transform: scale(1.1); /* Slight zoom effect */
-        filter: brightness(1.2); /* Brighten the icon */
+        transform: scale(1.1);*/ /* Slight zoom effect */
+        /*filter: brightness(1.2);*/ /* Brighten the icon */
+    /*}*/
+
+
+/* Social icons (single source of truth) */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 14px 0;
+}
+
+    /* Style the <a> as the "button" background */
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(255, 212, 96, 0.10); /* #FFD460 with transparency */
+        border: 1px solid rgba(255, 212, 96, 0.25);
+        transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
+
+    /* The icon image itself */
+    .social-icons .icon {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    /* Hover on the <a> (more reliable than :hover on img) */
+    .social-icons a:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 212, 96, 0.18);
+        border-color: rgba(255, 212, 96, 0.45);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
+
+        /* Slight pop on the icon itself */
+        .social-icons a:hover .icon {
+            transform: scale(1.12);
+            filter: brightness(1.15) drop-shadow(0 0 6px rgba(255, 212, 96, 0.35));
+        }
+
+    /* Optional: make LinkedIn hover slightly more coral */
+    .social-icons a[aria-label="LinkedIn"]:hover {
+        background: rgba(234, 84, 85, 0.16); /* #EA5455 */
+        border-color: rgba(234, 84, 85, 0.40);
+    }
+
+
+
+
+
+
 
 /* Contact Form */
 .contact-form {
