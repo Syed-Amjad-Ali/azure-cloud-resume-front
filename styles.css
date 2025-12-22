@@ -173,17 +173,35 @@ nav ul {
     fill: inherit; /* Use original SVG color */
 }
 
+/* Read-more line below visitor count */
 .project-link {
-    font-size: 0.95rem;
+    margin-top: 12px;        /* creates breathing space */
+    font-size: 0.95rem;      /* slightly smaller than main text */
     color: white;
 }
 
-.nav-link.inline {
+/* Inline link styled like nav buttons */
+.inline-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     padding: 2px 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 
 
+/* Hover like navbar */
+.inline-link:hover {
+    background-color: #EA5455;
+    transform: scale(1.05);
+}
+
+/* Kill ugly visited color */
+.inline-link:visited {
+    color: white;
+}
 
 /* Contact Info Section */
 .contact-info {
