@@ -561,7 +561,23 @@ a img, .technologies img {
         }
 
 
-    
+ 
+.hero-subtext {
+    color: white;
+}
+
+.hero-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: inherit;
+    margin-left: inherit;
+}
+
+    .hero-link:hover {
+        text-decoration: underline;
+        opacity: 0.85;
+    }
+   
 
 
 
