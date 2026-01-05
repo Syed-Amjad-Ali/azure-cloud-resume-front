@@ -1,4 +1,3 @@
-# 🌐 Personal Portfolio Website on Azure
 
 ## Project Background and Motivation
 
