@@ -3,7 +3,7 @@
 
 I wanted to build a personal portfolio website where I could showcase my data projects. At the same time, I wanted to properly learn cloud computing by building and operating a real system instead of stopping at theory or isolated examples.
 
-While researching practical Azure projects, I came across the **[Cloud Resume Challenge (Azure edition)](https://cloudresumechallenge.dev/docs/the-challenge/azure/)**. It is a well-known community challenge that describes what a cloud-native resume website should look like in production, including static hosting, serverless backends, databases, infrastructure as code, and CI/CD. I did not treat it as a checklist to rush through. Instead, I used it as a design reference and spent time understanding why each component exists and how Azure’s managed services fit together in a real deployment workflow.
+While researching practical Azure projects, I came across the **[Cloud Resume Challenge (Azure edition)](https://cloudresumechallenge.dev/docs/the-challenge/azure/)**. It is a well-known community challenge that describes what a cloud-native resume website should look like in production, including static hosting, serverless backends, databases, infrastructure as code, and CI/CD. This was an extremely rewarding project, and I recommend it to anyone who wants to get into Azure, AWS or GCP.
 
 I was also inspired by cloud practitioners who focus on learning by building, including content by **[Gwyneth Peña-Siguenza (GPSlearnsAI)](https://www.linkedin.com/in/madebygps/)**. Her Azure-focused projects reinforced the idea that platform fundamentals are best learned by working with real systems rather than toy examples.
 
