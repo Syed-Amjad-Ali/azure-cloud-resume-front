@@ -91,20 +91,68 @@
     </div>
 </div>
 
-                <!-- Project 2 -->
-<div class="portfolio-card" data-category="featured predictive r-programming">
-    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank">
-        <img src="assets/images/projects/Project2Map.png" alt="Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping" class="portfolio-image">
+<!-- Project 2 -->
+<div class="portfolio-card" data-category="featured predictive ml powerbi python">
+
+    <!-- Embedded Power BI Live Dashboard -->
+    <iframe title="Day-Ahead Electricity Price Forecast (Bergen)"
+        width="100%"
+        height="400"
+        src="https://app.powerbi.com/view?r=eyJrIjoiODY1ZTAzMGEtOTRjMi00MDkwLThkZTEtZjYxYWU4OTAwOGU2IiwidCI6IjRkYzM3Njg1LWUyMmEtNDQ4My1hNDE1LThiZGNjMTBkMWUzNyJ9"
+        frameborder="0"
+        allowfullscreen="true">
+    </iframe>
+
+    <!-- Title -->
+    <h3>Day-Ahead Electricity Price Forecast (Live)</h3>
+
+    <!-- Short Description -->
+    <p>
+        
+    </p>
+
+    <!-- Action Buttons -->
+    <a href="https://github.com/Syed-Amjad-Ali/Day-ahead-electricity-price-forecast-prod" 
+       target="_blank" 
+       class="button">
+        View on GitHub
     </a>
-    <h3>Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping</h3>
-    <p>Part 1 of a two-part project exploring Bergen's bike rental trends. It involves data cleaning, linear regression modeling, and dynamic geospatial mapping using Leaflet.</p>
-    
-    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank" class="button">View on GitHub</a>
-<div class="technologies">
-        <img src="assets/images/icons/R.svg" alt="R" class="tech-icon">
-        <img src="assets/images/icons/tidyverse.svg" alt="tidyverse" class="tech-icon">
+
+    <!-- Technologies -->
+    <div class="technologies">
+        <img src="assets/images/icons/Python.svg" alt="Python" class="tech-icon">
+        <img src="assets/images/icons/PowerBI.svg" alt="Power BI" class="tech-icon">
+        <img src="assets/images/icons/Databricks.svg" alt="Azure Databricks" class="tech-icon"> 
+        <img src="assets/images/icons/SparkSQL.svg" alt="Spark SQL" class="tech-icon">
     </div>
+
+    <!-- Read More Button -->
+    <button class="read-more-btn" onclick="toggleReadMore('readmore-electricity')">
+        📖 Read More
+    </button>
+
+    <!-- Hidden Read More Section -->
+    <div id="readmore-electricity" class="readmore-content">
+        <h4>⚡ About the Pipeline & Forecast</h4>
+        <p>
+            This project combines historical electricity prices and weather data to generate rolling
+            day-ahead forecasts. Feature engineering includes calendar effects and lag structures suitable
+            for 24-hour forecasting.
+        </p>
+        <p>
+            The pipeline is orchestrated in Azure Databricks and runs automatically every 12 hours.
+            Forecasts are appended alongside realized prices, enabling continuous performance evaluation
+            and transparent comparison between predicted and actual outcomes.
+        </p>
+        <p>
+            The Power BI dashboard visualizes live forecasts, historical prices, and model accuracy over time,
+            reflecting a realistic production analytics workflow rather than a one-off notebook.
+        </p>
+    </div>
+
 </div>
+
+
 
 <!-- Project 2.5 -->
 <div class="portfolio-card" data-category="featured data-analysis powerbi">
@@ -141,6 +189,23 @@
         </p>
     </div>
 </div>
+
+                <!-- Project 2.75 -->
+<div class="portfolio-card" data-category="featured predictive r-programming">
+    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank">
+        <img src="assets/images/projects/Project2Map.png" alt="Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping" class="portfolio-image">
+    </a>
+    <h3>Bergen Bysykkel 2024: Cleaning, Predicting, and Mapping</h3>
+    <p>Part 1 of a two-part project exploring Bergen's bike rental trends. It involves data cleaning, linear regression modeling, and dynamic geospatial mapping using Leaflet.</p>
+    
+    <a href="https://github.com/Syed-Amjad-Ali/Bergen-Byssykkel-and-Weather" target="_blank" class="button">View on GitHub</a>
+<div class="technologies">
+        <img src="assets/images/icons/R.svg" alt="R" class="tech-icon">
+        <img src="assets/images/icons/tidyverse.svg" alt="tidyverse" class="tech-icon">
+    </div>
+</div>
+
+
 
 
 <!-- Project 3 -->
